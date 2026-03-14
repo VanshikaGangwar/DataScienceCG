@@ -34,6 +34,8 @@ embeddings = model.encode(sentences)
 
 print(embeddings.shape)
 
+
+2.
 # Scenario: Fitness & Wellness Chatbot Training
 # You feed it these sentences:
 # - “Push-ups strengthen chest and triceps”
@@ -70,7 +72,7 @@ b = np.array([0.1,0.9,-0.2,0.4])
 print(cosine_similarity(a,b))
 
 
-2.
+3.
 # Scenario: Healthcare Chatbot – Patient Symptom Matching
 # Imagine you’re designing a healthcare chatbot that helps patients find possible conditions based on their symptoms. Both patients and conditions are represented as vectors of features (e.g., fever, cough, fatigue, headache).
 # - Patient’s symptom vector:
@@ -99,7 +101,7 @@ distance=np.linalg.norm(a-b)
 print(distance)
 
 
-3.
+4.
 # Scenario: Warehouse Robot Navigation
 # Imagine a warehouse where a robot needs to pick up items.
 # - The robot is currently at position (1,2) on the warehouse grid.
@@ -124,7 +126,7 @@ b = np.array([2,4,6])
 print(np.dot(a,b))
 
 
-4.
+5.
 # Scenario: Basketball Player Evaluation
 # A coach is evaluating how well a player’s skills match the team’s current needs.
 # - The team’s requirement vector is a = [2,5,1].
@@ -145,7 +147,7 @@ skill_vector= np.array([3,4,2])
 print(np.dot(requirement_vector,skill_vector))
 
 
-5.
+6.
 # # 🛒 Scenario: E‑Commerce Product Recommendations
 # # Imagine you’re building a smart recommendation engine for an online store.
 # # - Problem: Customers often search with phrases like “comfortable running shoes”,
@@ -179,7 +181,7 @@ best_match = max(product_embeddings.items(), key=lambda x: np.dot(query_embeddin
 print("\nRecommended Product:", best_match[0])
 
 
-6.
+7.
 #  Scenario: Online Learning Platform Recommendations
 # Imagine you’re building a smart recommendation engine for an online education platform.
 # - Problem: Students often search with phrases like “beginner-friendly Python tutorials”, but the course catalog has items titled “Introduction to Programming with Python”. Traditional keyword search struggles to connect these because the words don’t match exactly.
@@ -210,7 +212,7 @@ best_match = max(course_embeddings.items(), key=lambda x: np.dot(query_embedding
 print("\nRecommended Course:", best_match[0])
 
 
-7.
+8.
 # Scenario: Hospital FAQ Assistant
 # A hospital wants to build a chatbot that helps patients quickly find answers to common questions.
 # - Problem: Patients ask questions in different ways. For example:
@@ -246,7 +248,7 @@ best_match = max(faq_embeddings.items(), key=lambda x: np.dot(query_embedding, x
 print("\nBest FAQ Answer:", best_match[0])
 
 
-8.
+9.
 #  Scenario: Package Delivery in a City
 # Imagine you run a delivery company in a huge city with 100,000 houses. Each house has a
 #  unique “address fingerprint” (like the 384‑dimensional vectors in your code).
